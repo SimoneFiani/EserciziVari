@@ -1,0 +1,33 @@
+
+
+Creare un programma Java, che gestisca una collezione di clienti VVV
+
+Deve essere possibile fare 2 azioni:
+
+1- il metodo: "aggiungiCliente" deve aggiungere un nuovo cliente alla collezione.VVV
+
+2- serviPrimoCliente() deve stampare: "Sto servendo il cliente..." seguito dalle info del primo cliente in coda.VVV
+Altrimenti deve stampare: "Non c'è nessuno in fila" VVV
+Ora...io utilizzerò la vostra classe, e potrei chiamare quei due metodi a casaccio.VVV
+
+Quindi, magari creo 10 utenti di seguito, poi chiamo "serviPrimoCliente" per una ventina di volte di seguito.VVV
+
+Il vostro programma deve funzionare correttamente, senza crashare
+Potrei inserire dei valori a cazzo perché sono pazzo.
+
+Il vostro programma non deve crashare.
+[00:31, 2/10/2020] Luzzetti: Implementare tutti i vari controlli del caso.
+
+Il programma dovrà essere fatto in 4 versioni differenti:
+
+1- Utilizzando le liste
+
+2- Utilizzando le hashMap (La chiave, è il valore della posizione in coda. Tipo i bigliettini al supermercato quando 
+fai la fila al banco)
+
+3- Utilizzando i set.
+(Attenti che due clienti anche se si chiamano allo stesso modo, non devono scomparire magicamente...xD)
+
+4- Utilizzando le Queue
+[00:32, 2/10/2020] Luzzetti: VI DARÒ UN VOTO, A SECONDA DI QUANTO È SCRITTO BENE IL PROGRAMMA, DI QUANTO CRASHA, 
+E DI QUANTO RISPETTI LE SPECIFICHE
