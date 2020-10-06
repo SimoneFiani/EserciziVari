@@ -23,7 +23,7 @@ Il programma dovrà essere fatto in 4 versioni differenti:
 1- Utilizzando le liste
 
 2- Utilizzando le hashMap (La chiave, è il valore della posizione in coda. Tipo i bigliettini al supermercato quando 
-fai la fila al banco)
+fai la fila al banco)vvv
 
 3- Utilizzando i set.
 (Attenti che due clienti anche se si chiamano allo stesso modo, non devono scomparire magicamente...xD)
