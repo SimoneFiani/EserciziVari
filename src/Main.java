@@ -26,6 +26,10 @@ public class Main {
 		System.out.println(" ");
 		c.servirePrimoClienteSet();
 		c.servirePrimoClienteSet();
+		System.out.println(" ");
+		System.out.println("faccio una queue");
+		c.servirePrimoClienteQueue();
+		c.servirePrimoClienteQueue();
 
 	}
 
