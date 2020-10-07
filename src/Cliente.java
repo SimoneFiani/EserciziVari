@@ -2,12 +2,12 @@
 public class Cliente {
 
 	private String nome;
-	private String congnome;
+	private String cognome;
 
-	public Cliente(String nome, String congnome) {
+	public Cliente(String nome, String cognome) {
 		super();
 		this.nome = nome;
-		this.congnome = congnome;
+		this.cognome = cognome;
 	}
 
 	public String getNome() {
@@ -18,17 +18,17 @@ public class Cliente {
 		this.nome = nome;
 	}
 
-	public String getCongnome() {
-		return congnome;
+	public String getCognome() {
+		return cognome;
 	}
 
-	public void setCongnome(String congnome) {
-		this.congnome = congnome;
+	public void setCognome(String cognome) {
+		this.cognome = cognome;
 	}
 
 	@Override
 	public String toString() {
-		return "Cliente [nome=" + nome + ", congnome=" + congnome + "]";
+		return "Cliente [nome=" + nome + ", cognome=" + cognome + "]";
 	}
 
 }

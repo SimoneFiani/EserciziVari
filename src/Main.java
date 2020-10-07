@@ -17,12 +17,16 @@ public class Main {
 		c.aggiungiClienteCollection(5, c5);
 		c.aggiungiClienteCollection(5, c5);
 		c.aggiungiClienteCollection(5, c5);
+		System.out.println(" ");
+		c.servireClienteMap();
+		c.servireClienteMap();
+		System.out.println(" ");
+		c.servirePrimoClienteList();
+		c.servirePrimoClienteList();
+		System.out.println(" ");
+		c.servirePrimoClienteSet();
+		c.servirePrimoClienteSet();
 
-		c.servirePrimoClienteSet();
-		c.servirePrimoClienteSet();
-		c.servirePrimoClienteSet();
-		c.servirePrimoClienteSet();
-		c.servirePrimoClienteSet();
 	}
 
 }

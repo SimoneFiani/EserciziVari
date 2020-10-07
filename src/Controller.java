@@ -6,79 +6,79 @@ import java.util.Map;
 import java.util.Set;
 
 public class Controller {
-	private Integer countCodaClienti = 1;
+
 	private List<Cliente> listaClienti = new ArrayList<>();
 	private Map<Integer, Cliente> mappaClienti = new HashMap<>();
 	private Set<Cliente> setClienti = new HashSet<Cliente>();
 
 	public void aggiungiClienteCollection(Integer numeroCliente, Cliente cliente) {
-		listaClienti.add(cliente);
-		mappaClienti.put(numeroCliente, cliente);
-		if (setClienti.contains(cliente)) {
+
+		if (listaClienti.contains(cliente) || mappaClienti.containsValue(cliente) || setClienti.contains(cliente)) {
 			System.out.println("cliente già inserito");
 		} else {
 			System.out.println("cliente inserito correttamente");
+			listaClienti.add(cliente);
+			mappaClienti.put(numeroCliente, cliente);
 			setClienti.add(cliente);
 		}
+
 	}
 
 	public void servirePrimoClienteList() {
-
-		if (listaClienti.size() < 2 && !(listaClienti.size() == 0)) {
-			System.out.println("Non c'è nessuno in fila, entra il cliente: " + listaClienti.get(0));
-			listaClienti.remove(0);
-		} else if (listaClienti.size() == 0) {
-			System.out.println("Non ci sono Clienti");
-		} else {
-			System.out.println("Sto servendo il cliente: " + listaClienti.get(0));
-			listaClienti.remove(0);
-			System.out.println("Utenti attualmente in coda: " + listaClienti.size());
+		int count = listaClienti.size() - 1;
+		for (Cliente c : listaClienti) {
+			System.out.println("serviamo il cliente: " + c);
+			if (count > 0) {
+				System.out.println("utenti in coda: " + count);
+			} else {
+				System.out.println("non ci sono persone in coda");
+			}
+			count--;
 		}
+		if (listaClienti.size() > 0) {
+			System.out.println("rimuovo utenti dalla collection");
+			listaClienti.clear();
+		} else {
+			System.out.println("inserisci nuovi clienti prima di lanciare la funzione");
+		}
+
 	}
 
 	public void servireClienteMap() {
-
-		if (mappaClienti.size() > 2) {
-			System.out.println(
-					"serviamo il cliente: " + mappaClienti.get(countCodaClienti) + ", con numero: " + countCodaClienti);
-			System.out.println("ci sono attualmente in coda n°" + (mappaClienti.size() - 1) + " clienti");
-			mappaClienti.remove(countCodaClienti);
-			countCodaClienti++;
-
-		} else if (mappaClienti.size() == 2) {
-			System.out.println(
-					"serviamo il cliente: " + mappaClienti.get(countCodaClienti) + ", con numero: " + countCodaClienti);
-			System.out.println("attulamente c'è solo n°1 utente in coda");
-			mappaClienti.remove(countCodaClienti);
-			countCodaClienti++;
-
-		} else if (mappaClienti.size() == 1) {
-			System.out.println(
-					"serviamo il cliente: " + mappaClienti.get(countCodaClienti) + ", con numero: " + countCodaClienti);
-			System.out.println("non ci sono utenti in coda");
-			mappaClienti.remove(countCodaClienti);
-			countCodaClienti++;
+		int count = mappaClienti.size() - 1;
+		for (Cliente c : mappaClienti.values()) {
+			System.out.println("serviamo il cliente: " + c);
+			if (count > 0) {
+				System.out.println("utenti in coda: " + count);
+			} else {
+				System.out.println("non ci sono persone in coda");
+			}
+			count--;
 		}
-
+		if (mappaClienti.size() > 0) {
+			System.out.println("rimuovo utenti dalla collection");
+			mappaClienti.clear();
+		} else {
+			System.out.println("inserisci nuovi clienti prima di lanciare la funzione");
+		}
 	}
 
 	public void servirePrimoClienteSet() {
-
+		int count = setClienti.size() - 1;
 		for (Cliente c : setClienti) {
-
-			if (setClienti.size() > 2) {
-				System.out.println("serviamo il cliente: " + c);
-				System.out.println("clienti attualmente in coda: " + (setClienti.size() - 1));
-				setClienti.remove(c);
-			} else if (setClienti.size() == 1) {
-				System.out.println("serviamo il cliente: " + c);
-				System.out.println("non ci sono clienti in coda");
+			System.out.println("serviamo il cliente: " + c);
+			if (count > 0) {
+				System.out.println("utenti in coda: " + count);
 			} else {
-				System.out.println("non ci sono clienti in sala");
+				System.out.println("non ci sono persone in coda");
 			}
-
+			count--;
 		}
-
+		if (setClienti.size() > 0) {
+			System.out.println("rimuovo utenti dalla collection");
+			setClienti.clear();
+		} else {
+			System.out.println("inserisci nuovi clienti prima di lanciare la funzione");
+		}
 	}
-
 }
