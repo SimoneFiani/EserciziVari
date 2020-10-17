@@ -4,6 +4,6 @@ import java.util.List;
 
 public interface Stampatore {
 
-	void stampa(List<String> lista);
+	void stampa(List<String> l);
 
 }

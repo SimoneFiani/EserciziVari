@@ -9,10 +9,19 @@ public class Main {
 
 		List<String> lista = new ArrayList<>();
 
-		Stampatore s = new StampanteBuona();
+		lista.add("ciao");
+		lista.add("mamma");
+		lista.add("guarda");
+		lista.add("come");
+		lista.add("mi");
+		lista.add("diverto");
 
-		s.stampa(lista);
+		Stampatore s1 = new StampanteDritta();
+		Stampatore s2 = new StampanteRovescio();
 
+		s1.stampa(lista);
+		System.out.println(" ");
+		s2.stampa(lista);
 	}
 
 }

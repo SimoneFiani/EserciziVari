@@ -3,7 +3,7 @@
 ESERCIZIO
 
 La classe Main deve creare una lista,
-e riempirla di quello che vi pare.
+e riempirla di quello che vi pare.xxx
 La classe Main, dovrà creare anche una 
 variabile che contiene un'oggetto di tipo Stampatore.
 Stampatore è un'interfaccia , con un solo
