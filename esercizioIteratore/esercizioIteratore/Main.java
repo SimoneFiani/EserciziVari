@@ -15,13 +15,14 @@ public class Main {
 		lista.add("come");
 		lista.add("mi");
 		lista.add("diverto");
+		Stampatore s;
 
-		Stampatore s1 = new StampanteDritta();
-		Stampatore s2 = new StampanteRovescio();
-
-		s1.stampa(lista);
-		System.out.println(" ");
-		s2.stampa(lista);
+		s = new StampanteDritta();
+		s.stampa(lista);
+		s = new StampanteRovescio();
+		s.stampa(lista);
+		s = System.out::println;
+		s.stampa(lista);
 	}
 
 }
