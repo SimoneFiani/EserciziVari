@@ -4,5 +4,6 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="esercizioIteratore"/>
 	<classpathentry kind="src" path="esercizioEroe"/>
+	<classpathentry kind="src" path="esercizioCifrario"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
