@@ -2,6 +2,6 @@ package esercizioCifrario;
 
 public interface Cifrario {
 
-	String cifra();
+	String cifra(String s);
 
 }
