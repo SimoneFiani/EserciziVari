@@ -2,7 +2,7 @@ package esercizioCifrario;
 
 public class CriptoSoftware {
 
-	Cifrario cifrario;
+	private Cifrario cifrario;
 
 	public String cifraLaStringa(String s) {
 		return this.cifrario.cifra(s);
