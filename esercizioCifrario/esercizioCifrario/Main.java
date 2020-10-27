@@ -9,7 +9,9 @@ public class Main {
 		String s = "prova";
 
 		cs.setCifrario(new CifrarioDiCesare());
+		System.out.println(cs.cifraLaStringa(s));
 
+		cs.setCifrario(new CifrarioDiVegenere());
 		System.out.println(cs.cifraLaStringa(s));
 
 	}
