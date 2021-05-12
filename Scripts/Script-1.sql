@@ -1,0 +1,1 @@
+SELECT * FROM RECORD r 

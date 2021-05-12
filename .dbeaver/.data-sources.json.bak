@@ -1,0 +1,29 @@
+{
+	"folders": {},
+	"connections": {
+		"h2_embedded-1774b20a1cc-5ace672f2f3d7bc2": {
+			"provider": "generic",
+			"driver": "h2_embedded",
+			"name": "New Connection",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"configuration": {
+				"url": "jdbc:h2:file:~/data/farmacissimo;AUTO_SERVER=TRUE",
+				"type": "dev",
+				"auth-model": "native",
+				"handlers": {}
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false
+		}
+	}
+}
